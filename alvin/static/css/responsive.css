@@ -1,0 +1,125 @@
+@media (max-width: 1260px) {
+    .slider_section .img-box {
+        padding-bottom: 325px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .slider_section .img-box {
+        padding-bottom: 275px;
+    }
+
+    .package_section .package_container .box {
+
+        margin: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider_section .img-box {
+        padding-bottom: 200px;
+        background-size: cover;
+    }
+
+    .book_section {
+        margin-top: -125px;
+    }
+
+    .package_section .package_container .box {
+
+        margin: 15px 10px;
+        -ms-flex-preferred-size: calc(50% - 20px);
+        ;
+        flex-basis: calc(50% - 20px);
+    }
+
+    .client_section .client_box {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about_section .img-box .slider-img,
+    .slider_section .img-box .slider-img {
+        width: 350px;
+        animation: none;
+    }
+
+
+    .package_section .package_container .box {
+        -ms-flex-preferred-size: calc(100% - 20px);
+        flex-basis: calc(100% - 20px);
+    }
+
+    .client_section .client_container {
+        flex-direction: column;
+    }
+
+    .client_section .client_box {
+        margin: 25px 5px;
+    }
+
+    .info_section .info_logo {
+        justify-content: center;
+    }
+
+    .info_section .info_top {
+        flex-direction: column;
+    }
+
+    .info_section .info_top .info_form form {
+        width: 350px;
+    }
+
+
+
+    .info_section .info_top .info_form {
+        margin-bottom: 35px;
+    }
+
+    .info_section .info_main .row>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .info_section .info_contact .link-box {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .book_section form {
+        padding: 35px 25px;
+    }
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 420px) {
+    .slider_section .detail-box h1 {
+        font-size: 2.5rem;
+    }
+
+    .about_section .img-box .slider-img,
+    .slider_section .img-box .slider-img {
+        width: 315px;
+    }
+
+    .info_section .info_top .info_form form {
+        width: 295px;
+    }
+}
+
+@media (max-width: 360px) {}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+
+}
