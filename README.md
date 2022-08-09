@@ -1,4 +1,4 @@
-# Django_Travel_WebApp
+# Django_Travel
 This is WebApp template for a travel company.
 
 Create a virtual environment `python -m venv venv`
