@@ -1,5 +1,5 @@
 # Django_Travel
-This is WebApp template for a travel company.
+This is WebApp template for a tours & travel company.
 
 Create a virtual environment `python -m venv venv`.
 Install django `pip install django`.
