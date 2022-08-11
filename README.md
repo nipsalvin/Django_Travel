@@ -2,6 +2,8 @@
 This is WebApp template for a tours & travel company.
 
 Create a virtual environment `python -m venv venv`.
+Run `pip install -r requirements.txt` to install all dependancies.
+
 Install django `pip install django`.
 Install python-decouple `pip install python-decouple`.
 Create a `.env` file and add SECRET_KEY = 'your_secret_key'.
