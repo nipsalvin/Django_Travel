@@ -2,7 +2,7 @@
 This is WebApp template for a tours & travel company.
 
 Create a virtual environment `python -m venv venv`.
-Run `pip install -r requirements.txt` to install all dependancies.
+Run `pip install -r requirements.txt` to install all dependancies at once.
 
 Install django `pip install django`.
 Install python-decouple `pip install python-decouple`.
