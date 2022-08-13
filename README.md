@@ -11,6 +11,8 @@
 
 > Create a `.env` file and add SECRET_KEY = 'your_secret_key'.
 
+> Database of choice in this project is `PostgreSQL`
+
 > Install postgresql connector `pip install psycopg2`.
 
 > Install package to handle images `pip install pillow`.
