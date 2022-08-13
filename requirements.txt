@@ -1,11 +1,13 @@
 aiohttp==3.6.2
 appdirs==1.4.3
 apturl==0.5.2
+asgiref==3.5.2
 async-timeout==3.0.1
 attrs==19.3.0
 awscli==1.18.69
 Babel==2.6.0
 backports.entry-points-selectable==1.1.0
+backports.zoneinfo==0.2.1
 bcrypt==3.1.7
 beautifulsoup4==4.8.2
 blinker==1.4
@@ -27,7 +29,7 @@ defusedxml==0.6.0
 distlib==0.3.3
 distro==1.4.0
 distro-info===0.23ubuntu1
-Django==2.2.12
+Django==4.1
 django-ranged-response==0.2.0
 django-simple-captcha==0.5.14
 docutils==0.16
@@ -35,7 +37,6 @@ duplicity==0.8.12.0
 entrypoints==0.3
 fasteners==0.14.1
 filelock==3.3.1
-Flask==2.0.2
 freezegun==0.3.15
 future==0.18.2
 gevent==1.4.0
