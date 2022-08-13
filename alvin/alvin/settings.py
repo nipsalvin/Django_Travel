@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'alvin_travels', # add the new app that you have created
+    'alvin_travels.apps.AlvinTravelsConfig', # add the new app that you have created
 ]
 
 MIDDLEWARE = [
@@ -81,10 +81,10 @@ WSGI_APPLICATION = 'alvin.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Django_Travel',
-        'USER': 'openpg',
-        'PASSWORD': '',
-        'HOST':'Localhost',
+        'NAME': 'Django_Travel_DB_2',
+        'USER': 'super_user',
+        'PASSWORD': 'root123',
+        'HOST':'localhost',
     }
 }
 
