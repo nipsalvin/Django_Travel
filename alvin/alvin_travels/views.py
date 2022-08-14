@@ -8,13 +8,13 @@ from .models import Destination
 def index(request):
 
     dest1 = Destination()
-    dest1.name = 'Nairobi (from Views.py)'
+    dest1.name = 'Nairobi'
     dest1.price = 200
     dest1.desc = 'Place of cool waters'
     dest1.pic = 'package-bg1.jpg'
 
     dest2 = Destination()
-    dest2.name = 'Naivash'
+    dest2.name = 'Naivasha'
     dest2.price = 100
     dest2.desc = 'City that never sleeps'
     dest2.pic = 'about-bg.png'
