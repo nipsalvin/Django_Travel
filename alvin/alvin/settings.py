@@ -81,9 +81,9 @@ WSGI_APPLICATION = 'alvin.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Django_Travel_DB_2',
-        'USER': 'super_user',
-        'PASSWORD': 'root123',
+        'NAME': ' ', #enter database name
+        'USER': ' ', #enter database username
+        'PASSWORD': ' ', #enter database password
         'HOST':'localhost',
     }
 }
