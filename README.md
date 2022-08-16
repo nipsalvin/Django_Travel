@@ -12,6 +12,11 @@
 > Create a `.env` file and add SECRET_KEY = 'your_secret_key'.
 
 > Database of choice in this project is `PostgreSQL`
+    
+    You can download it from `https://www.postgresql.org/download/`.
+    You will also need a panel from where to access your Database, in this case we use PGadmin. 
+    You can download it from `https://www.pgadmin.org/download/`.
+
 
 > Install postgresql connector `pip install psycopg2`.
 
