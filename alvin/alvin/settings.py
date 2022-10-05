@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'alvin_travels.apps.AlvinTravelsConfig', # add the new app that you have created
+    # add the new app that you have created
+    'alvin_travels.apps.AlvinTravelsConfig', 
 ]
 
 MIDDLEWARE = [
