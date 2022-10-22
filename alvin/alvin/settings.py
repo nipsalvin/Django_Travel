@@ -130,6 +130,8 @@ STATICFILES_DIRS =[
 ]
 STATIC_ROOT = os.path.join(BASE_DIR,'assets') #django takes the files in statics and copies them to 'assets' 
 #Run the command `python manage.py collectstatic` to perform migration from static to assets
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
