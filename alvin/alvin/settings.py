@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'alvin_travels.apps.AlvinTravelsConfig', # add the new app that you have created
+    # add the new app that you have created
+    'alvin_travels.apps.AlvinTravelsConfig', 
 ]
 
 MIDDLEWARE = [
@@ -81,9 +82,9 @@ WSGI_APPLICATION = 'alvin.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': ' ', #enter database name
-        'USER': ' ', #enter database username
-        'PASSWORD': ' ', #enter database password
+        'NAME': 'Django_Travel', #enter database name
+        'USER': 'super_user', #enter database username
+        'PASSWORD': 'Root123', #enter database password
         'HOST':'localhost',
     }
 }
@@ -129,6 +130,8 @@ STATICFILES_DIRS =[
 ]
 STATIC_ROOT = os.path.join(BASE_DIR,'assets') #django takes the files in statics and copies them to 'assets' 
 #Run the command `python manage.py collectstatic` to perform migration from static to assets
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
