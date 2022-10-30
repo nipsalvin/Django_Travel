@@ -15,20 +15,20 @@ def register(request):
             if User.objects.filter(username=username).exists():
                 print("Username Taken")
                 print('\U0001F600')
-                return redirect('/')
+                return redirect('register')
             elif User.objects.filter(email=email).exists():
                 print("Email already exists")
                 print('\U0001F600')
-                return redirect('/')
+                return redirect('register')
             else:
                 user = User.objects.create_user(username=username, password=password1, email=email, first_name=first_name, last_name=last_name)
                 user.save();
                 print('User Saved')
                 print('\U0001F600')
-                return redirect('/')
+                return redirect('register')
         else:
             print("Passwords not matching")
-            return redirect('/')
+            return redirect('register')
 
     else:
         return render(request, 'register.html')
