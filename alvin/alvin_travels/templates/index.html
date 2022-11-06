@@ -62,16 +62,16 @@
           </a>
           <div class="user_option">
             {% if user.is_authenticated %}
-            <a href="accounts/register">
-              <img src="{% static 'images/user-icon.png' %}" alt="" />
-              Hello {{user}}
-              <a href="accounts/logout">Logout</a>
-            </a>
+              <a href="accounts/register">
+                <img src="{% static 'images/user-icon.png' %}" alt="" />
+                Hello {{user.first_name}}
+                <a href="accounts/logout">Logout</a>
+              </a>
             {% else %}
-            <a href="accounts/login">
-              <img src="{% static 'images/user-icon.png' %}" alt="" />
-              Login/Register
-            </a>
+              <a href="accounts/login">
+                <img src="{% static 'images/user-icon.png' %}" alt="" />
+                Login/Register
+              </a>
             {% endif %}
             <form class="form-inline my-2 my-lg-0  mb-3 mb-lg-0">
               <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
