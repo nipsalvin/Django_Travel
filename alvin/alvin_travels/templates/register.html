@@ -1,8 +1,12 @@
+{% load static %}
+{% static "images" as baseUrl%}
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8" />
 	<title>Register</title>
+    <h1>Registration</h1>
 </head>
 <body>
 	<form action="register" method="post">
@@ -24,6 +28,10 @@
         {% endfor %}
         <!-- <h2>{{messages}}</h2> -->
     </div>
+
+    <br>
+    <button><a href="/accounts/login">Login</a></button><br>
+    <br><button><a href="/">Home</a></button>
 
 </body>
 </html>
