@@ -33,12 +33,12 @@ def register(request):
             if User.objects.filter(username=username).exists():
                 messages.info(request,'Username already exists')
                 # print("Username Taken")
-                print('\U0001F600')
+                # print('\U0001F600')
                 return redirect('register')
             elif User.objects.filter(email=email).exists():
                 messages.info(request,'Email already exists')
                 # print("Email already exists")
-                print('\U0001F600')
+                # print('\U0001F600')
                 return redirect('register')
             else:
                 user = User.objects.create_user(username=username, password=password1, email=email, first_name=first_name, last_name=last_name)
@@ -54,3 +54,7 @@ def register(request):
 
     else:
         return render(request, 'register.html')
+
+def logout(request):
+    auth.logout(request)
+    return redirect('/')
