@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
 
@@ -13,21 +14,25 @@ def register(request):
 
         if password1 == password2:
             if User.objects.filter(username=username).exists():
-                print("Username Taken")
+                messages.info(request,'Username already exists')
+                # print("Username Taken")
                 print('\U0001F600')
                 return redirect('register')
             elif User.objects.filter(email=email).exists():
-                print("Email already exists")
+                messages.info(request,'Email already exists')
+                # print("Email already exists")
                 print('\U0001F600')
                 return redirect('register')
             else:
                 user = User.objects.create_user(username=username, password=password1, email=email, first_name=first_name, last_name=last_name)
                 user.save();
-                print('User Saved')
+                messages.info(request, 'User Saved')
+                # print('User Saved')
                 print('\U0001F600')
                 return redirect('register')
         else:
-            print("Passwords not matching")
+            messages.info(request, 'Passwords not matching')
+            # print("Passwords not matching")
             return redirect('register')
 
     else:
