@@ -1,3 +1,8 @@
+{% extends 'base.html' %}
+{% load static %}
+{% static "images" as baseUrl%}
+
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,3 +31,5 @@
     <br><button><a href="/">Home</a></button>
 </body>
 </html>
+
+{% endblock %}

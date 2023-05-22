@@ -1,87 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 {% static "images" as baseUrl%}
+{% block content %}
 
 <!DOCTYPE html>
 <html>
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
 
-  <title>Alvin Travels</title>
-
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,500,700&display=swap" rel="stylesheet" />
-
-  <!-- Custom styles for this template -->
-  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
-
-  <!-- responsive style -->
-  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
-</head>
-
-<body>
- 
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
-          <div class="fk_width" id="">
-            <div class="custom_menu-btn">
-              <button onclick="openNav()">
-                <span class="s-1"> </span>
-                <span class="s-2"> </span>
-                <span class="s-3"> </span>
-              </button>
-            </div>
-            <div id="myNav" class="overlay">
-              <div class="overlay-content">
-                <a href="{% static 'index.html' %}">Home</a>
-                <a href="{% static 'about.html' %}">About</a>
-                <a href="{% static 'package.html' %}">Packages</a>
-                <a href="{% static 'testimonial.html' %}">Testimonial</a>
-              </div>
-            </div>
-          </div>
-          <a class="navbar-brand" href="{% static 'index.html' %}">
-            <img src="{% static 'images/logo.png' %}" alt="" />
-          </a>
-          <div class="user_option">
-            {% if user.is_authenticated %}
-              <a href="accounts/register">
-                <img src="{% static 'images/user-icon.png' %}" alt="" />
-                Hello {{user.first_name}}
-                <a href="accounts/logout">Logout</a>
-              </a>
-            {% else %}
-              <a href="accounts/login">
-                <img src="{% static 'images/user-icon.png' %}" alt="" />
-                Login/Register
-              </a>
-            {% endif %}
-            <form class="form-inline my-2 my-lg-0  mb-3 mb-lg-0">
-              <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-            </form>
-            
-          </div>
-        </nav>
-      </div>
-    </header>
     <!-- end header section -->
 
     <!-- slider section -->
@@ -211,96 +136,6 @@
         
         {% endfor %}
         
-        <!-- <div class="box ">
-          <div class="detail-box">
-            <h4>
-              {{dest2.name}}
-            </h4>
-            <div class="price_detail">
-              <h5>
-                $ {{dest2.price}}
-              </h5>
-              <p>
-                {{dest2.desc}}
-              </p>
-            </div>
-            <a href="#">
-              Book Now
-            </a>
-          </div>
-        </div>
-        <div class="box ">
-          <div class="detail-box">
-            <h4>
-              New York
-            </h4>
-            <div class="price_detail">
-              <h5>
-                $/1000
-              </h5>
-              <p>
-                It is a long established fact that a reader will be
-              </p>
-            </div>
-            <a href="#">
-              Book Now
-            </a>
-          </div>
-        </div>
-        <div class="box ">
-          <div class="detail-box">
-            <h4>
-              Hong Kong
-            </h4>
-            <div class="price_detail">
-              <h5>
-                $/1000
-              </h5>
-              <p>
-                It is a long established fact that a reader will be
-              </p>
-            </div>
-            <a href="#">
-              Book Now
-            </a>
-          </div>
-        </div>
-        <div class="box ">
-          <div class="detail-box">
-            <h4>
-              Malaysia
-            </h4>
-            <div class="price_detail">
-              <h5>
-                $/1000
-              </h5>
-              <p>
-                It is a long established fact that a reader will be
-              </p>
-            </div>
-            <a href="#">
-              Book Now
-            </a>
-          </div>
-        </div>
-        <div class="box ">
-          <div class="detail-box">
-            <h4>
-              Japan
-            </h4>
-            <div class="price_detail">
-              <h5>
-                $/1000
-              </h5>
-              <p>
-                It is a long established fact that a reader will be
-              </p>
-            </div>
-            <a href="#">
-              Book Now
-            </a>
-          </div>
-        </div> -->
       </div>
     </div>
   </section>
@@ -724,19 +559,7 @@
   <!-- end info section -->
 
 
-  <!-- footer section -->
-  <section class="footer_section ">
-    <p>
-      &copy; 2022 All Rights Reserved. Design by
-      <a href="https://alvin254.netlify.app" target="_blank">Alvin</a>
-    </p>
-  </section>
-  <!-- footer section -->
-
-  <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+  {% endblock %}
 </body>
 
 </html>

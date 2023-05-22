@@ -84,7 +84,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Django_Travel', #enter database name
         'USER': 'super_user', #enter database username
-        'PASSWORD': 'Root123', #enter database password
+        'PASSWORD': 'root123', #enter database password
         'HOST':'localhost',
     }
 }
@@ -114,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Asia/Riyadh'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
